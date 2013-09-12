@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="dashboard.common" template="/WEB-INF/views/layouts/dashboardLayout.jsp">
+        <put-attribute name="title" value="Template" />
+        <put-attribute name="header" value="/WEB-INF/views/commons/header.jsp" />       
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/commons/footer.jsp" />
+    </definition> 
+     
+    
+    <!-- ********************************* Dashboard ************************************ --> 
+    
+    <definition name="adminDashboard" extends="dashboard.common">
+        <put-attribute name="title" value="Dashboard" />
+        <put-attribute name="body" value="/WEB-INF/views/contents/adminDashboard.jsp" />
+    </definition>  
+
+</tiles-definitions>
